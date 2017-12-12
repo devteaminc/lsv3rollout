@@ -1,0 +1,24 @@
+<?php
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2017 Amasty (https://www.amasty.com)
+ * @package Amasty_Scroll
+ */
+/**
+ * @var $block \Amasty\Scroll\Block\Init
+ */
+if(!$block->isEnabled()) {
+    return;
+}
+?>
+<script>
+    require([
+        'jquery',
+        'amScrollScript'
+    ], function ($) {
+        $('<?php echo $block->getProductsBlockSelector(); ?>').amScrollScript(<?php echo $block->getConfig(); ?>);
+    });
+</script>
+
+
+

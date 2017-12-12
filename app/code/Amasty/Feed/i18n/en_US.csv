@@ -1,0 +1,172 @@
+Categories,Categories
+"Add New Categories Mapping","Add New Categories Mapping"
+"Save and Continue Edit","Save and Continue Edit"
+"Category Information","Category Information"
+"Add Field","Add Field"
+General,General
+"General Information","General Information"
+Code,Code
+Name,Name
+"Categories View","Categories View"
+Feeds,Feeds
+"Add New Feed","Add New Feed"
+"Save and Generate","Save and Generate"
+"Feed Information","Feed Information"
+Analytics,Analytics
+"Google Analytics","Google Analytics"
+"Campaign Source","Campaign Source"
+"<b>Required.</b> Use <b>utm_source</b> to identify a search engine, newsletter name, or other source.<br/><i>Example:</i> utm_source=google","<b>Required.</b> Use <b>utm_source</b> to identify a search engine, newsletter name, or other source.<br/><i>Example:</i> utm_source=google"
+"Campaign Medium","Campaign Medium"
+"<b>Required.</b> Use <b>utm_medium</b> to identify a medium such as email or cost-per- click<br/><i>Example:</i> utm_medium=cpc","<b>Required.</b> Use <b>utm_medium</b> to identify a medium such as email or cost-per- click<br/><i>Example:</i> utm_medium=cpc"
+"Campaign Term","Campaign Term"
+"Used for paid search. Use <b>utm_term</b> to note the keywords for this ad.<br/><i>Example:</i> utm_term=running+shoes","Used for paid search. Use <b>utm_term</b> to note the keywords for this ad.<br/><i>Example:</i> utm_term=running+shoes"
+"Campaign Content","Campaign Content"
+"Used for A/B testing and content-targeted ads. Use <b>utm_content</b> to differentiate ads or links that point to the same URL.<br/><i>Example:</i> utm_content=logolink <i>or</i> utm_content=textlink","Used for A/B testing and content-targeted ads. Use <b>utm_content</b> to differentiate ads or links that point to the same URL.<br/><i>Example:</i> utm_content=logolink <i>or</i> utm_content=textlink"
+"Campaign Name","Campaign Name"
+"Used for keyword analysis. Use <b>utm_campaign</b> to identify a specific product promotion or strategic campaign.<br/><i>Example:</i> utm_campaign=spring_sale","Used for keyword analysis. Use <b>utm_campaign</b> to identify a specific product promotion or strategic campaign.<br/><i>Example:</i> utm_campaign=spring_sale"
+Conditions,Conditions
+"Conditions (don't add conditions if need export all products)","Conditions (don't add conditions if need export all products)"
+From,From
+To,To
+Text,Text
+"Max Length","Max Length"
+Content,Content
+Options,Options
+"Column Names","Column Names"
+Yes,Yes
+No,No
+Header,Header
+"Fields enclosed by","Fields enclosed by"
+"Double Quote ("")","Double Quote ("")"
+"Quote (')","Quote (')"
+Space,Space
+None,None
+"Fields separated by","Fields separated by"
+"Comma (,)","Comma (,)"
+"Semicolon (;)","Semicolon (;)"
+"Pipe (|)","Pipe (|)"
+Tab,Tab
+Fields,Fields
+"Add Attribute","Add Attribute"
+"Add Static Text","Add Static Text"
+Delivery,Delivery
+Enabled,Enabled
+Host,Host
+"Add port if necessary (example.com:321)","Add port if necessary (example.com:321)"
+"Delivery Type","Delivery Type"
+FTP,FTP
+SFTP,SFTP
+User,User
+Password,Password
+Path,Path
+"Passive Mode","Passive Mode"
+Format,Format
+Price,Price
+Currency,Currency
+"Show Currency Abbr","Show Currency Abbr"
+"Number of decimal points","Number of decimal points"
+One,One
+Two,Two
+Three,Three
+Four,Four
+"Separator for the decimal point","Separator for the decimal point"
+"Dot (.)","Dot (.)"
+"Thousands Separator","Thousands Separator"
+"Space ( )","Space ( )"
+Date,Date
+"File Name","File Name"
+Type,Type
+CSV,CSV
+XML,XML
+Store,Store
+Status,Status
+Active,Active
+Inactive,Inactive
+"Execution mode","Execution mode"
+"Cron Execution Time","Cron Execution Time"
+Compress,Compress
+"XML Template","XML Template"
+Item,Item
+"XML Tag for Item (example for Google - item)","XML Tag for Item (example for Google - item)"
+Footer,Footer
+Insert,Insert
+Update,Update
+"Feed View","Feed View"
+"Custom Feed","Custom Feed"
+"Add %1 Template","Add %1 Template"
+"You deleted the category.","You deleted the category."
+"We can't delete the category right now. Please review the log and try again.","We can't delete the category right now. Please review the log and try again."
+"We can't find a category to delete.","We can't find a category to delete."
+"This categories no longer exists.","This categories no longer exists."
+"New Categories Mapping","New Categories Mapping"
+"The wrong category is specified.","The wrong category is specified."
+"You saved the feed.","You saved the feed."
+"Something went wrong while saving the feed data. Please review the error log.","Something went wrong while saving the feed data. Please review the error log."
+"This feed no longer exists.","This feed no longer exists."
+"Something went wrong. Please review the error log.","Something went wrong. Please review the error log."
+"Something went wrong while export feed data. Please review the error log.","Something went wrong while export feed data. Please review the error log."
+"You deleted the feed.","You deleted the feed."
+"We can't delete the feed right now. Please review the log and try again.","We can't delete the feed right now. Please review the log and try again."
+"We can't find a feed to delete.","We can't find a feed to delete."
+"Feed %1 was duplicated","Feed %1 was duplicated"
+"New Feed","New Feed"
+"Feed %1 created","Feed %1 created"
+"Feed %1 was generated","Feed %1 was generated"
+"Feed %1 was deleted","Feed %1 was deleted"
+"The wrong feed is specified.","The wrong feed is specified."
+"Template %1 was created","Template %1 was created"
+Zip,Zip
+Gz,Gz
+Bz,Bz
+"Default Rules","Default Rules"
+"Shortest Path","Shortest Path"
+"Longest Path","Longest Path"
+"The header column names are already set.","The header column names are already set."
+"Please correct the file format.","Please correct the file format."
+"The adapter object must be an instance of %1.","The adapter object must be an instance of %1."
+"Can not connect the FTP server %1:%2.","Can not connect the FTP server %1:%2."
+"Can not log in to the server with user `%1` and password `%2`.","Can not log in to the server with user `%1` and password `%2`."
+"Can not upload the file to the folder %1. Please check write permissions","Can not upload the file to the folder %1. Please check write permissions"
+Manual,Manual
+Hourly,Hourly
+Daily,Daily
+Weekly,Weekly
+Monthly,Monthly
+"Please choose a condition to add.","Please choose a condition to add."
+"Conditions Combination","Conditions Combination"
+"Product Attribute","Product Attribute"
+"Stock Status","Stock Status"
+View,View
+Download,Download
+"Ignore category","Ignore category"
+Attribute,Attribute
+Parent,Parent
+Basic,Basic
+Product,Product
+Inventory,Inventory
+Category,Category
+"Category Paths","Category Paths"
+Image,Image
+Gallery,Gallery
+Url,Url
+Delete,Delete
+"hide modifier(s)","hide modifier(s)"
+"add modifier","add modifier"
+"show modifier(s)","show modifier(s)"
+Tag,Tag
+"products from","products from"
+exported,exported
+Initializing,Initializing
+Progress,Progress
+Close,Close
+"Product Feed","Product Feed"
+"Batch Size","Batch Size"
+"Indicate how many products will be handled during one iteration. Affects the feed generation time and the server memory consumption.","Indicate how many products will be handled during one iteration. Affects the feed generation time and the server memory consumption."
+"URL with category","URL with category"
+ID,ID
+Generate,Generate
+Duplicate,Duplicate
+"Delete items","Delete items"
+"Delete selected items?","Delete selected items?"
+Mode,Mode
+Generated,Generated

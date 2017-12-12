@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2017 Amasty (https://www.amasty.com)
+ * @package Amasty_InvisibleCaptcha
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <aminvisiblecaptcha>
+            <general>
+                <enabledCaptcha>1</enabledCaptcha>
+                <captchaUrls><![CDATA[customer/account/createpost
+newsletter/subscriber/new
+review/product/post]]></captchaUrls>
+                <captchaSelectors><![CDATA[form[action*="customer/account/createpost"]
+form[action*="newsletter/subscriber/new"]
+form[action*="review/product/post"]]]></captchaSelectors>
+            </general>
+        </aminvisiblecaptcha>
+    </default>
+</config>
