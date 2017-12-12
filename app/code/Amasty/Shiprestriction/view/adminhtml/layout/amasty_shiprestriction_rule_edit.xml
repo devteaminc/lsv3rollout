@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2017 Amasty (https://www.amasty.com)
+ * @package Amasty_Shiprestriction
+ */
+-->
+<!--
+/**
+ * Copyright © 2015 Amasty. All rights reserved.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Amasty_Shiprestriction::css/style.css" />
+    </head>
+    <body>
+        <referenceContainer name="left">
+            <block class="Amasty\Shiprestriction\Block\Adminhtml\Rule\Edit\Tabs" name="amasty_shiprestriction_rule_edit_tabs" >
+                <arguments>
+                    <argument name="id" xsi:type="string">amasty_shiprestriction_rule_edit_tabs</argument>
+                    <argument name="dest_element_id" xsi:type="string">edit_form</argument>
+                    <argument name="title" xsi:type="string" translate="true">Shipping Restrictions Options</argument>
+                </arguments>
+                <block class="Amasty\Shiprestriction\Block\Adminhtml\Rule\Edit\Tab\General" name="amasty_shiprestriction_rule_edit_tab_general"/>
+                <block class="Amasty\Shiprestriction\Block\Adminhtml\Rule\Edit\Tab\Conditions" name="amasty_shiprestriction_rule_edit_tab_conditions"/>
+                <block class="Amasty\Shiprestriction\Block\Adminhtml\Rule\Edit\Tab\Apply" name="amasty_shiprestriction_rule_edit_tab_apply"/>
+                <block class="Amasty\Shiprestriction\Block\Adminhtml\Rule\Edit\Tab\Stores" name="amasty_shiprestriction_rule_edit_tab_stores"/>
+                <block class="Amasty\Shiprestriction\Block\Adminhtml\Rule\Edit\Tab\Daystime" name="amasty_shiprestriction_rule_edit_tab_daystime"/>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">general</argument>
+                    <argument name="block" xsi:type="string">amasty_shiprestriction_rule_edit_tab_general</argument>
+                </action>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">conditions</argument>
+                    <argument name="block" xsi:type="string">amasty_shiprestriction_rule_edit_tab_conditions</argument>
+                </action>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">apply</argument>
+                    <argument name="block" xsi:type="string">amasty_shiprestriction_rule_edit_tab_apply</argument>
+                </action>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">stores</argument>
+                    <argument name="block" xsi:type="string">amasty_shiprestriction_rule_edit_tab_stores</argument>
+                </action>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">daystime</argument>
+                    <argument name="block" xsi:type="string">amasty_shiprestriction_rule_edit_tab_daystime</argument>
+                </action>
+            </block>
+
+            <block class="Magento\Backend\Block\Template" template="Amasty_Shiprestriction::rule_js.phtml" name="promo_quote_edit_jsinit"/>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <block class="Amasty\Shiprestriction\Block\Adminhtml\Rule\Edit" name="amasty_shiprestriction_rule_edit"/>
+        </referenceContainer>
+    </body>
+</page>

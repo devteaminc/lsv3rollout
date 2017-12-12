@@ -1,0 +1,103 @@
+"Shipping Restrictions","Shipping Restrictions"
+"Add Rule","Add Rule"
+"Save and Continue Edit","Save and Continue Edit"
+"Edit Shipping Restriction Rule `%1`","Edit Shipping Restriction Rule `%1`"
+"Add new Shipping Restriction Rule","Add new Shipping Restriction Rule"
+"Shipping Restrictions Information","Shipping Restrictions Information"
+Coupons,Coupons
+"Apply Restrictions Only With","Apply Restrictions Only With"
+"Coupon Code","Coupon Code"
+"Apply this restriction with coupon only. You should configure coupon in <a href=""%1""><span>Promotions / Shopping Cart Rules</span></a> area first.","Apply this restriction with coupon only. You should configure coupon in <a href=""%1""><span>Promotions / Shopping Cart Rules</span></a> area first."
+"Shopping Cart Rule (discount)","Shopping Cart Rule (discount)"
+"Apply this restriction with ANY coupon from specified discount rule. You should configure the rule in <a href=""%1""><span>Promotions / Shopping Cart Price Rules</span></a> area first. Useful when you have MULTIPLE coupons in one rule.","Apply this restriction with ANY coupon from specified discount rule. You should configure the rule in <a href=""%1""><span>Promotions / Shopping Cart Price Rules</span></a> area first. Useful when you have MULTIPLE coupons in one rule."
+"Do NOT Apply Restrictions With","Do NOT Apply Restrictions With"
+"Coupon code","Coupon code"
+"Not apply this restriction with coupon. You should configure coupon in <a href=""%1""><span>Promotions / Shopping Cart Rules</span></a> area first.","Not apply this restriction with coupon. You should configure coupon in <a href=""%1""><span>Promotions / Shopping Cart Rules</span></a> area first."
+"Not apply this restriction with ANY coupon from specified discount rule. You should configure the rule in <a href=""%1""><span>Promotions / Shopping Cart Price Rules</span></a> area first. Useful when you have MULTIPLE coupons in one rule.","Not apply this restriction with ANY coupon from specified discount rule. You should configure the rule in <a href=""%1""><span>Promotions / Shopping Cart Price Rules</span></a> area first. Useful when you have MULTIPLE coupons in one rule."
+Conditions,Conditions
+"Apply the rule only if the following conditions are met (leave blank for all products).","Apply the rule only if the following conditions are met (leave blank for all products)."
+Backorders,Backorders
+"Apply the rule to","Apply the rule to"
+"All orders","All orders"
+"Backorders only","Backorders only"
+"Non backorders","Non backorders"
+"Days and Time","Days and Time"
+"Days of the Week","Days of the Week"
+"Leave empty or select all to apply the rule every day","Leave empty or select all to apply the rule every day"
+"Time From:","Time From:"
+"Time To:","Time To:"
+"Shipping Methods","Shipping Methods"
+General,General
+Name,Name
+Status,Status
+"Restrict Shipping Methods","Restrict Shipping Methods"
+"One method name per line, e.g Next Day Air","One method name per line, e.g Next Day Air"
+"Restrict ALL METHODS from Carriers","Restrict ALL METHODS from Carriers"
+"Select if you want to restrict ALL methods from the given carrirers","Select if you want to restrict ALL methods from the given carrirers"
+"Error Message","Error Message"
+"Stores & Customer Groups","Stores & Customer Groups"
+"Apply In","Apply In"
+"Admin Area","Admin Area"
+No,No
+Yes,Yes
+Stores,Stores
+"Leave empty or select all to apply the rule to any","Leave empty or select all to apply the rule to any"
+"Apply For","Apply For"
+"Customer Groups","Customer Groups"
+"Leave empty or select all to apply the rule to any group","Leave empty or select all to apply the rule to any group"
+"Shipping Restrictions Options","Shipping Restrictions Options"
+"Allows All","Allows All"
+"Restricts For All","Restricts For All"
+Any,Any
+"Restricts in All","Restricts in All"
+"You deleted the item.","You deleted the item."
+"We can't delete item right now. Please review the log and try again.","We can't delete item right now. Please review the log and try again."
+"We can't find a item to delete.","We can't find a item to delete."
+"Please select a rule to duplicate.","Please select a rule to duplicate."
+"This item no longer exists.","This item no longer exists."
+"The rule has been duplicated. Please feel free to activate it.","The rule has been duplicated. Please feel free to activate it."
+"Something went wrong while saving the item data. Please review the error log.","Something went wrong while saving the item data. Please review the error log."
+"You activated the rule(s).","You activated the rule(s)."
+"You inactivated the rule(s).","You inactivated the rule(s)."
+"You deleted the rule(s).","You deleted the rule(s)."
+"We can't delete rule(s) right now. Please review the log and try again.","We can't delete rule(s) right now. Please review the log and try again."
+"We can't find a rule(s) to delete.","We can't find a rule(s) to delete."
+"The wrong item is specified.","The wrong item is specified."
+"You saved the item.","You saved the item."
+"NOT LOGGED IN","NOT LOGGED IN"
+Active,Active
+Inactive,Inactive
+Sunday,Sunday
+Monday,Monday
+Tuesday,Tuesday
+Wednesday,Wednesday
+Thursday,Thursday
+Friday,Friday
+Saturday,Saturday
+"Address Line","Address Line"
+City,City
+contains,contains
+"does not contain","does not contain"
+"starts from","starts from"
+"ends with","ends with"
+"Products subselection","Products subselection"
+"Conditions combination","Conditions combination"
+"Cart Attribute","Cart Attribute"
+"total quantity","total quantity"
+"total amount","total amount"
+"total weight","total weight"
+"Sorry, no shipping quotes are available for the selected products and destination","Sorry, no shipping quotes are available for the selected products and destination"
+"Your coupon was successfully applied.","Your coupon was successfully applied."
+"Include tax in subtotal","Include tax in subtotal"
+"Use subtotal after discount","Use subtotal after discount"
+"Always show error message","Always show error message"
+Activate,Activate
+"Are you sure?","Are you sure?"
+Inactivate,Inactivate
+Delete,Delete
+ID,ID
+Carriers,Carriers
+Methods,Methods
+"Store Views","Store Views"
+Action,Action
+Duplicate,Duplicate
