@@ -1,0 +1,22 @@
+<!--
+/**
+* @author Amasty Team
+* @copyright Copyright (c) 2016 Amasty (http://www.amasty.com)
+* @package Amasty_Orderattr
+*/
+-->
+
+<!-- ko if: (isVisible()) -->
+<div class="ship-via">
+    <table class="table-totals">
+        <tbody>
+        <!-- ko foreach: getOrderAttributes() -->
+            <tr>
+                <td width="50%"><span class="value" data-bind="text: label"></span>:&nbsp;</td>
+                <td><span class="value" data-bind="text: value"></span></td>
+            </tr>
+        <!-- /ko -->
+        </tbody>
+    </table>
+</div>
+<!--/ko-->

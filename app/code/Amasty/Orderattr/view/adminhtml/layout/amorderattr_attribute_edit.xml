@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2017 Amasty (https://www.amasty.com)
+ * @package Amasty_Orderattr
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="left">
+            <block class="Amasty\Orderattr\Block\Adminhtml\Order\Attribute\Edit\Tabs"
+                   name="attribute_edit_tabs">
+                <container label="Main" name="main">
+                    <block class="Amasty\Orderattr\Block\Adminhtml\Order\Attribute\Edit\Tab\Main" as="base"/>
+                </container>
+                <block class="Amasty\Orderattr\Block\Adminhtml\Order\Attribute\Edit\Tab\Options" as="options"/>
+                <block class="Amasty\Orderattr\Block\Adminhtml\Order\Attribute\Edit\Tab\Conditions" as="conditions"/>
+            </block>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <block class="Amasty\Orderattr\Block\Adminhtml\Order\Attribute\Edit"
+                   name="attribute_edit_content"/>
+        </referenceContainer>
+        <referenceContainer name="js">
+            <block class="Magento\Backend\Block\Template" name="attribute_edit_js"
+                   template="Amasty_Orderattr::attribute/js.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

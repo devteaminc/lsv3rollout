@@ -1,0 +1,38 @@
+<?php
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2017 Amasty (https://www.amasty.com)
+ * @package Amasty_Orderattr
+ */
+?>
+<?php
+/**
+ * @var \Amasty\Orderattr\Block\Order\Attributes $this
+ */
+$orderAttributeList = $this->getList();
+?>
+
+<div class="block block-order-details-view">
+    <div class="block-title">
+        <strong><?php echo __('Additional Info') ?></strong>
+    </div>
+    <div class="block-content">
+        <?php if ($orderAttributeList): ?>
+            <?php foreach ($orderAttributeList as $label => $value):?>
+                <strong class="box-title">
+                    <span><?php echo __($label);?></span>
+                </strong>
+                <div class="box-content">
+                    <?php echo $this->prepareAttributeValueForDisplaying($value);?>
+                </div>
+            <?php endforeach;?>
+        <?php else: ?>
+            <strong class="box-title">
+                <span>&nbsp;</span>
+            </strong>
+            <div class="box-content">
+                <?php echo __('No attributes for this order'); ?>
+            </div>
+        <?php endif;?>
+    </div>
+</div>

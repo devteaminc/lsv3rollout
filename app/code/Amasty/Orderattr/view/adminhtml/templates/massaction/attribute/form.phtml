@@ -1,0 +1,25 @@
+<?php
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2017 Amasty (https://www.amasty.com)
+ * @package Amasty_Orderattr
+ */
+?>
+<form action="<?php /* @escapeNotVerified */ echo $block->getSaveUrl() ?>"
+      method="post" id="attributes-edit-form"
+      class="attributes-edit-form" enctype="multipart/form-data">
+    <?php echo $block->getBlockHtml('formkey')?>
+    <input type="hidden" name="order-ids" value="<?php echo $block->getSelectedIds(); ?>">
+    <div class="entry-edit form-inline">
+        <?php echo $block->getFormHtml();?>
+    </div>
+    <?php echo $block->getChildHtml('form_after');?>
+</form>
+<script>
+    require(['jquery', "mage/mage"], function(jQuery){
+
+        jQuery('#attributes-edit-form').mage('form')
+            .mage('validation', {validationUrl: '<?php /* @escapeNotVerified */ echo $block->getValidationUrl() ?>'});
+
+    });
+</script>

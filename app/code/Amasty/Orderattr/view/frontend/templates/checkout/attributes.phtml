@@ -1,0 +1,18 @@
+<?php
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2017 Amasty (https://www.amasty.com)
+ * @package Amasty_Orderattr
+ */
+?>
+<?php
+/** @var $block \Amasty\Orderattr\Block\Checkout\Attributes */
+?>
+
+<script type="text/javascript">
+    require([
+        'uiRegistry'
+    ], function(uiRegistry) {
+        uiRegistry.set('amastyOrderAttributes', <?= $block->getAttributeCodes() ?>);
+    });
+</script>

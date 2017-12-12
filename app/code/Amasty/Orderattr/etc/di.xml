@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2017 Amasty (https://www.amasty.com)
+ * @package Amasty_Orderattr
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <preference for="Amasty\Orderattr\Api\Data\OrderAttributeInterface" type="Amasty\Orderattr\Model\Order\Attribute"/>
+    <preference for="Amasty\Orderattr\Api\Data\OrderAttributeDataInterface" type="Amasty\Orderattr\Model\OrderAttributeData"/>
+    <preference for="Amasty\Orderattr\Api\Data\OrderAttributeValueInterface" type="Amasty\Orderattr\Model\Order\Attribute\Value"/>
+    <preference for="Amasty\Orderattr\Api\RelationRepositoryInterface" type="Amasty\Orderattr\Model\RelationRepository"/>
+    <preference for="Amasty\Orderattr\Api\Data\RelationInterface" type="Amasty\Orderattr\Model\Relation"/>
+    <preference for="Amasty\Orderattr\Api\Data\RelationDetailInterface" type="Amasty\Orderattr\Model\RelationDetails"/>
+    <preference for="Amasty\Orderattr\Api\OrderAttributeValueRepositoryInterface" type="Amasty\Orderattr\Model\Order\Attribute\ValueRepository"/>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="amorderattr_relation_grid_data_source" xsi:type="string">Amasty\Orderattr\Model\ResourceModel\Relation\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <type name="Magento\Quote\Model\Quote\Address">
+        <plugin name="AmorderattrSetQuoteCustomAttributes" type="Amasty\Orderattr\Plugin\Order\AttributesList" />
+    </type>
+
+    <type name="Magento\Sales\Block\Items\AbstractItems">
+        <plugin name="Amasty_Orderattr::OrderEmailAttributesList" type="Amasty\Orderattr\Plugin\Order\Email\Attributes" />
+    </type>
+
+    <type name="Magento\Sales\Api\OrderRepositoryInterface">
+        <plugin name="AmorderattrSaveOrder" type="Amasty\Orderattr\Plugin\Order\OrderSave"/>
+    </type>
+
+    <type name="Magento\Sales\Block\Order\PrintOrder\Invoice">
+        <plugin name="Amasty_Orderattr::PrintInvoice" type="Amasty\Orderattr\Plugin\Order\PrintOrder" />
+    </type>
+    <type name="Magento\Sales\Block\Order\PrintOrder\Shipment">
+        <plugin name="Amasty_Orderattr::PrintShipment" type="Amasty\Orderattr\Plugin\Order\PrintOrder" />
+    </type>
+    <type name="Magento\Sales\Model\Order">
+        <plugin name="Amasty_Orderattr::getData" type="Amasty\Orderattr\Plugin\Order" />
+    </type>
+
+    <!-- Save attributes start -->
+    <type name="Magento\Quote\Model\Quote\Address\CustomAttributeList">
+        <plugin name="Amasty_Orderattr:saveCustomAttributeList" type="Amasty\Orderattr\Plugin\Quote\Model\Quote\Address\CustomAttributeList"/>
+    </type>
+    <type name="Magento\Quote\Model\Quote\Address">
+        <plugin name="Amasty_Orderattr:saveQuoteAddress" type="Amasty\Orderattr\Plugin\Quote\Model\Quote\Address"/>
+    </type>
+    <!-- Save attributes end -->
+
+    <virtualType name="QuoteAddressRelationsComposite" type="Magento\Framework\Model\ResourceModel\Db\VersionControl\RelationComposite">
+        <arguments>
+            <argument name="relationProcessors" xsi:type="array">
+                <item name="amasty_attribute_quote_save" xsi:type="object">Amasty\Orderattr\Model\ResourceModel\Quote\Address\Relation</item>
+            </argument>
+        </arguments>
+    </virtualType>
+
+</config>

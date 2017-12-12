@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2017 Amasty (https://www.amasty.com)
+ * @package Amasty_Orderattr
+ */
+-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/amastyorderattr/" method="POST">
+        <service class="Amasty\Orderattr\Api\OrderAttributeValueRepositoryInterface" method="saveApi"/>
+        <resources>
+            <resource ref="Amasty_Orderattr::orderattr" />
+        </resources>
+    </route>
+</routes>

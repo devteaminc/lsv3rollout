@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2017 Amasty (https://www.amasty.com)
+ * @package Amasty_Orderattr
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <amorderattr>
+            <checkout>
+                <progress>1</progress>
+                <hide_empty>1</hide_empty>
+            </checkout>
+            <pdf>
+                <shipment>1</shipment>
+                <invoice>1</invoice>
+            </pdf>
+            <invoices_shipments>
+                <invoice_grid>1</invoice_grid>
+                <invoice_view>1</invoice_view>
+                <shipment_grid>1</shipment_grid>
+                <shipment_view>1</shipment_view>
+            </invoices_shipments>
+        </amorderattr>
+    </default>
+</config>

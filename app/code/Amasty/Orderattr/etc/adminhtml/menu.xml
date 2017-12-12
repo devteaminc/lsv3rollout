@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2017 Amasty (https://www.amasty.com)
+ * @package Amasty_Orderattr
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Amasty_Orderattr::order_attributes"
+             title="Amasty Order Attributes"
+             module="Amasty_Orderattr"
+             sortOrder="151801"
+             parent="Magento_Sales::sales"
+             resource="Amasty_Orderattr::order_attributes"/>
+        <add id="Amasty_Orderattr::attributes_list"
+             title="Manage Order Attributes"
+             module="Amasty_Orderattr"
+             sortOrder="10"
+             parent="Amasty_Orderattr::order_attributes"
+             action="amorderattr/attribute/index"
+             resource="Amasty_Orderattr::order_attributes"/>
+        <add id="Amasty_Orderattr::attributes_relation"
+             title="Manage Order Attributes Relations"
+             module="Amasty_Orderattr"
+             sortOrder="20"
+             parent="Amasty_Orderattr::order_attributes"
+             action="amorderattr/relation/index"
+             resource="Amasty_Orderattr::attributes_relation"/>
+    </menu>
+</config>

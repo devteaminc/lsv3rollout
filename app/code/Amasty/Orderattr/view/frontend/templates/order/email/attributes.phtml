@@ -1,0 +1,46 @@
+<?php
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2017 Amasty (https://www.amasty.com)
+ * @package Amasty_Orderattr
+ */
+?>
+<?php
+/**
+ * @var \Amasty\Orderattr\Block\Order\Attributes $this
+ */
+$orderAttributeList = $this->getList();
+?>
+
+<?php if ($this->hasDataInList($orderAttributeList)): ?>
+    <table class="email-items">
+        <thead>
+        <tr>
+            <th class="item-info">
+                <?php echo __('Additional Information:'); ?>
+            </th>
+            <th>&nbsp;</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php if ($orderAttributeList):
+            foreach ($orderAttributeList as $label => $value): ?>
+                <?php if ($value !== ''): ?>
+                    <tr>
+                        <td valign="top"><label><?php echo $label; ?></label>
+                        </td>
+                        <td>
+                            <?php echo $this->prepareAttributeValueForDisplaying($value); ?>
+                        </td>
+                    </tr>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <?php echo __('No attributes for this order'); ?>
+        <?php endif; ?>
+        <tr>
+            <td colspan="2"></td>
+        </tr>
+        </tbody>
+    </table>
+<?php endif; ?>

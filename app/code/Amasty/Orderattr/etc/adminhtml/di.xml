@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2017 Amasty (https://www.amasty.com)
+ * @package Amasty_Orderattr
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <preference for="Magento\Sales\Model\Order\Pdf\Invoice" type="Amasty\Orderattr\Model\Order\Pdf\Invoice" />
+    <preference for="Magento\Sales\Model\Order\Pdf\Shipment" type="Amasty\Orderattr\Model\Order\Pdf\Shipment" />
+    <preference for="Amasty\Orderattr\Ui\Component\Listing\Attribute\RepositoryInterface" type="Amasty\Orderattr\Ui\Component\Listing\Attribute\Repository"/>
+
+    <type name="Magento\Sales\Block\Adminhtml\Order\View\Info">
+        <plugin name="Amasty_Orderattr::OrderEditAttributesList" type="Amasty\Orderattr\Plugin\Order\Adminhtml\Attributes" />
+    </type>
+    <type name="Magento\Sales\Block\Adminhtml\Order\Create\Form\Account">
+        <plugin name="Amasty_Orderattr::CreateOrderAttributesForm" type="Amasty\Orderattr\Plugin\Order\Adminhtml\Attributes\Form" />
+    </type>
+
+    <type name="Magento\Sales\Model\AdminOrder\Create">
+        <plugin name="Amasty_Orderattr::SaveOrderAttributesForm" type="Amasty\Orderattr\Plugin\Order\Adminhtml\CreateOrder" />
+    </type>
+
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <plugin name="Amasty_Orderattr::OrderAddAttributesToCollection" type="Amasty\Orderattr\Plugin\Order\SearchResult" />
+    </type>
+
+    <type name="Magento\Ui\Component\Listing\Columns">
+        <plugin name="Amasty_Orderattr::OrderAddAttributesGridColumns" type="Amasty\Orderattr\Plugin\Ui\Component\Listing\Columns" />
+    </type>
+
+    <!--type name="Magento\Ui\Component\Filters\Type\Select">
+        <plugin name="Amasty_Orderattr::CheckboxFilterApply" type="Amasty\Orderattr\Plugin\Order\Adminhtml\Grid\Filter\CheckboxesFilter" />
+    </type-->
+</config>

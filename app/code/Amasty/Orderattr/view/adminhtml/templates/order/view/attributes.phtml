@@ -1,0 +1,41 @@
+<?php
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2017 Amasty (https://www.amasty.com)
+ * @package Amasty_Orderattr
+ */
+?>
+<?php
+/**
+ * @var \Amasty\Orderattr\Block\Adminhtml\Order\View\Attributes $this
+ */
+$orderAttributeList = $this->getList();
+?>
+
+<section class="admin__page-section order-view-account-information">
+    <div class="admin__page-section-title">
+        <span class="title"><?php echo __('Custom Attributes') ?></span>
+        <div class="actions"><?php echo $this->getOrderAttributeEditLink(); ?></div>
+    </div>
+    <div class="admin__page-section-content">
+        <div class="admin__page-section-item order-information">
+            <div class="admin__page-section-item-content">
+                <table class="admin__table-secondary order-information-table">
+                    <?php if ($orderAttributeList): ?>
+                        <?php foreach ($orderAttributeList as $label => $value):?>
+                            <tr>
+                                <th><?php echo __($label);?></th>
+                                <td><strong><?php echo $this->prepareAttributeValueForDisplaying($value);?></strong></td>
+                            </tr>
+                        <?php endforeach;?>
+                    <?php else: ?>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <td><?php echo __('No attributes for this order'); ?></td>
+                        </tr>
+                    <?php endif;?>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

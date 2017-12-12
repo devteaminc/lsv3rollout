@@ -1,0 +1,30 @@
+<?php
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2017 Amasty (https://www.amasty.com)
+ * @package Amasty_Orderattr
+ */
+?>
+
+<div class="admin__page-section-title">
+    <span class="title"><?php echo __('Order Attributes'); ?></span>
+    <div class="actions"></div>
+</div>
+<div id="order-attributes-fields"
+     class="admin__page-section-content admin__scope-old">
+        <?php echo $block->getFormHtml();?>
+</div>
+
+<script>
+    require([
+        "jquery",
+        "mage/calendar"
+    ], function($){
+        $('.date-calendar').each(function(key, item) {
+            var calendar = $(item).data('mage-init');
+            if(calendar) {
+                $(item).calendar(calendar.calendar);
+            }
+        });
+    });
+</script>
